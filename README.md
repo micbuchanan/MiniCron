@@ -36,3 +36,4 @@ Given the time limitations (2 hours), the obvious areas for improvement would be
 - Enabling the app to run outside of Xcode, directly in the Terminal
 - Enabling the app to run interactively in the Terminal, with prompts for the required data and formats
 - Enabling the app to receive and parse the config data in a variety of formats, including `.txt` or even `.csv` files
+- Improved error handling and test scenarios. Especially given the scope for faulty data to be entered.
