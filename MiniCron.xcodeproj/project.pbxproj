@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9F141E1828B1702B0064469F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F141E1728B1702B0064469F /* main.swift */; };
+		9F141E1F28B170870064469F /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F141E1E28B170870064469F /* ConsoleIO.swift */; };
+		9F6BEFF928B17D41003BDB52 /* MiniCron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BEFF828B17D41003BDB52 /* MiniCron.swift */; };
+		9F6BEFFB28B2A3A6003BDB52 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BEFFA28B2A3A6003BDB52 /* Extensions.swift */; };
+		9F88255A28B3B7B8009C8DCA /* MiniCronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F88255928B3B7B8009C8DCA /* MiniCronTests.swift */; };
+		9FF0B4B328B3EBB600C44B7B /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F141E1E28B170870064469F /* ConsoleIO.swift */; };
+		9FF0B4B428B3EBB900C44B7B /* MiniCron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BEFF828B17D41003BDB52 /* MiniCron.swift */; };
+		9FF0B4B528B3EBBC00C44B7B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BEFFA28B2A3A6003BDB52 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +32,23 @@
 /* Begin PBXFileReference section */
 		9F141E1428B1702B0064469F /* MiniCron */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MiniCron; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F141E1728B1702B0064469F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9F141E1E28B170870064469F /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		9F6BEFF828B17D41003BDB52 /* MiniCron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCron.swift; sourceTree = "<group>"; };
+		9F6BEFFA28B2A3A6003BDB52 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9F88255728B3B7B8009C8DCA /* MiniCronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F88255928B3B7B8009C8DCA /* MiniCronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCronTests.swift; sourceTree = "<group>"; };
+		9FF0B4B228B3EB6400C44B7B /* MiniCronTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = MiniCronTestPlan.xctestplan; path = MiniCron.xcodeproj/MiniCronTestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9F141E1128B1702B0064469F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F88255428B3B7B8009C8DCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +61,9 @@
 		9F141E0B28B1702B0064469F = {
 			isa = PBXGroup;
 			children = (
+				9FF0B4B228B3EB6400C44B7B /* MiniCronTestPlan.xctestplan */,
 				9F141E1628B1702B0064469F /* MiniCron */,
+				9F88255828B3B7B8009C8DCA /* MiniCronTests */,
 				9F141E1528B1702B0064469F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				9F141E1428B1702B0064469F /* MiniCron */,
+				9F88255728B3B7B8009C8DCA /* MiniCronTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +81,19 @@
 			isa = PBXGroup;
 			children = (
 				9F141E1728B1702B0064469F /* main.swift */,
+				9F141E1E28B170870064469F /* ConsoleIO.swift */,
+				9F6BEFF828B17D41003BDB52 /* MiniCron.swift */,
+				9F6BEFFA28B2A3A6003BDB52 /* Extensions.swift */,
 			);
 			path = MiniCron;
+			sourceTree = "<group>";
+		};
+		9F88255828B3B7B8009C8DCA /* MiniCronTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F88255928B3B7B8009C8DCA /* MiniCronTests.swift */,
+			);
+			path = MiniCronTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,23 @@
 			productReference = 9F141E1428B1702B0064469F /* MiniCron */;
 			productType = "com.apple.product-type.tool";
 		};
+		9F88255628B3B7B8009C8DCA /* MiniCronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F88255D28B3B7B8009C8DCA /* Build configuration list for PBXNativeTarget "MiniCronTests" */;
+			buildPhases = (
+				9F88255328B3B7B8009C8DCA /* Sources */,
+				9F88255428B3B7B8009C8DCA /* Frameworks */,
+				9F88255528B3B7B8009C8DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniCronTests;
+			productName = MiniCronTests;
+			productReference = 9F88255728B3B7B8009C8DCA /* MiniCronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +144,9 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					9F141E1328B1702B0064469F = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					9F88255628B3B7B8009C8DCA = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
@@ -111,16 +165,41 @@
 			projectRoot = "";
 			targets = (
 				9F141E1328B1702B0064469F /* MiniCron */,
+				9F88255628B3B7B8009C8DCA /* MiniCronTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F88255528B3B7B8009C8DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F141E1028B1702B0064469F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6BEFFB28B2A3A6003BDB52 /* Extensions.swift in Sources */,
 				9F141E1828B1702B0064469F /* main.swift in Sources */,
+				9F6BEFF928B17D41003BDB52 /* MiniCron.swift in Sources */,
+				9F141E1F28B170870064469F /* ConsoleIO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F88255328B3B7B8009C8DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F88255A28B3B7B8009C8DCA /* MiniCronTests.swift in Sources */,
+				9FF0B4B428B3EBB900C44B7B /* MiniCron.swift in Sources */,
+				9FF0B4B328B3EBB600C44B7B /* ConsoleIO.swift in Sources */,
+				9FF0B4B528B3EBBC00C44B7B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +341,36 @@
 			};
 			name = Release;
 		};
+		9F88255B28B3B7B8009C8DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2P2SALY26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.micbuchanan.MiniCronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F88255C28B3B7B8009C8DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2P2SALY26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.micbuchanan.MiniCronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +388,15 @@
 			buildConfigurations = (
 				9F141E1C28B1702B0064469F /* Debug */,
 				9F141E1D28B1702B0064469F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F88255D28B3B7B8009C8DCA /* Build configuration list for PBXNativeTarget "MiniCronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F88255B28B3B7B8009C8DCA /* Debug */,
+				9F88255C28B3B7B8009C8DCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

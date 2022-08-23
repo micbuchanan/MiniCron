@@ -2,10 +2,15 @@
 //  main.swift
 //  MiniCron
 //
-//  Created by Michael Buchanan on 20/08/2022.
+//  Created by Michael Buchanan on 21/08/2022.
 //
 
 import Foundation
 
-print("Hello, World!")
+let miniCron = MiniCron(
+    console: ConsoleIO(),
+    currentDate: Date()
+)
+let arguments = CommandLine.arguments
+miniCron.staticMode(arguments)
 

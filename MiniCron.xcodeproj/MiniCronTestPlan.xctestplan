@@ -1,0 +1,42 @@
+{
+  "configurations" : [
+    {
+      "id" : "55EB4813-B507-47CF-9B0E-A316E4E1FABC",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "-h"
+      },
+      {
+        "argument" : "30 1 \/bin\/run_me_daily 45 * \/bin\/run_me_hourly * * \/bin\/run_me_every_minute * 19 \/bin\/run_me_sixty_times ",
+        "enabled" : false
+      },
+      {
+        "argument" : "16:10",
+        "enabled" : false
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MiniCron.xcodeproj",
+      "identifier" : "9F141E1328B1702B0064469F",
+      "name" : "MiniCron"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MiniCron.xcodeproj",
+        "identifier" : "9F88255628B3B7B8009C8DCA",
+        "name" : "MiniCronTests"
+      }
+    }
+  ],
+  "version" : 1
+}
